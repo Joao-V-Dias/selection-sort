@@ -210,9 +210,9 @@ Ela verifica se o elemento anterior é maior que o atual, caso isso ocorra, a fl
 ### Resultado - Comparação entre as duas versões (Iterações / Tempo em segundos)
 
 
-| Lista 1       | Lista 2         | Lista 3           |
-| ------------- | --------------- | ----------------- |
-| 45 / 0.00001 | 4950 / 0.00026 | 499500 / 0.06651 |
-| 39 / 0.00001 | 945 / 0.00009  | 495129 / 0.06415 |
+| Lista 1       | Lista 2         | Lista 3           | Lista 4           |
+| ------------- | --------------- | ----------------- | ----------------- |
+| 45 / 0.00005 | 276 / 0.00015 | 190 / 0.00100 | 136 / 0.00011 |
+| 45 / 0.00005 | 276 / 0.00013  | 154 / 0.00094 | 16 / 0.00001 |
 
-Obtivemos uma redução na quantidade de iterações, o que resultou em um ganho no tempo de execução do algoritmo
+A otimização do algoritmo se mostra mais eficaz quando os dados estão parcial ou totalmente ordenados, como na Lista 4, onde o loop foi encerrado antecipadamente. Em listas desordenadas ou invertidas, o ganho foi mínimo, já que ainda foram necessárias todas as comparações.
